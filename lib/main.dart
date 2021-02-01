@@ -12,8 +12,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       child: MaterialApp(
-        title: 'Provider Tracker Demo',
+        title: 'Provider Tracker',
+        theme: ThemeData(primaryColor: Color(0xFF1a202b)),
         home: WeightPage(),
+        debugShowCheckedModeBanner: false,
       ),
       providers: [
         ChangeNotifierProvider(
